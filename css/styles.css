@@ -8,7 +8,7 @@
 кольор фону main основний #F5F5F5
 кольор фону main другорядний #F5F4FA*/
 
-.root {
+:root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --nav-navigatin: #2196f3;
@@ -29,6 +29,20 @@ body {
   line-height: 1.7;
 }
 
+.logoheader {
+  color: var(--color-header-logo);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logoheader .spanheader {
+  color: var(--nav-navigatin);
+}
+
 .list {
   list-style: none;
+  /* Комплексный для всех ссылок */
 }
