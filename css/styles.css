@@ -2,12 +2,11 @@
 колір для заголовкив #212121 
 колір для обзаців  #757575 
 колір при наведені nav, чаcтина logo, заповнення кольором button #2196F3 
-білий кольор тексту кольор фону header #FFFFFF
+білий кольор тексту кольор фону header фону main основний #FFFFFF
 колір logo в header #000000
 колір тексту mail і tel footer rgba(255, 255, 255, 0.6)
 
 кольор фону main hero та footer #2F303A
-кольор фону main основний #F5F5F5
 кольор фону main другорядний #F5F4FA*/
 
 :root {
@@ -17,7 +16,6 @@
   --color-header-footer: #ffffff;
   --color-header-logo: #000000;
   --color-bg-hero-footer: #2f303a;
-  --color-first-main: #f5f5f5;
   --color-secondary-main: #f5f4fa;
   --color-footer-mailtel: rgba(255, 255, 255, 0.6);
 }
@@ -28,7 +26,7 @@
 }
 
 body {
-  background-color: var(--color-first-main);
+  background-color: var(--color-header-footer);
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
@@ -37,6 +35,8 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+
+/* Header - NAV */
 
 .nav-logo {
   color: var(--color-header-logo);
@@ -70,9 +70,15 @@ body {
   color: var(--nav-navigatin);
 }
 
+.line-link.current {
+  color: var(--nav-navigatin);
+}
+
 .list-line .contact-link {
   color: var(--primary-text-color);
 }
+
+/* Index.html main */
 
 .hero {
   background-color: var(--color-bg-hero-footer);
@@ -150,6 +156,45 @@ body {
   font-size: 16px;
   line-height: 19px;
 }
+
+/* Portfolio.html main */
+
+.button-link {
+  color: var(--title-text-color);
+  background-color: var(--color-secondary-main);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.button-link:hover,
+.button-link:focus {
+  color: var(--color-header-footer);
+  background-color: var(--nav-navigatin);
+}
+
+.link-pictures {
+  text-decoration: none;
+}
+
+.link-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.link-text {
+  color: var(--primary-text-color);
+
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* Footer */
 
 .footer {
   background-color: var(--color-bg-hero-footer);
