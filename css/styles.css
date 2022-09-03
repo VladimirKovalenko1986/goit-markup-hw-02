@@ -1,113 +1,100 @@
-/* Розмічаємо палітру
-колір для заголовкив #212121 
-колір для обзаців  #757575 
-колір при наведені nav, чаcтина logo, заповнення кольором button #2196F3 
-білий кольор тексту кольор фону header фону main основний #FFFFFF
-колір logo в header #000000
-колір тексту mail і tel footer rgba(255, 255, 255, 0.6)
-
-кольор фону main hero та footer #2F303A
-кольор фону main другорядний #F5F4FA*/
 
 :root {
-  --primary-text-color: #757575;
-  --title-text-color: #212121;
-  --nav-navigatin: #2196f3;
-  --color-header-footer: #ffffff;
-  --color-header-logo: #000000;
-  --color-bg-hero-footer: #2f303a;
-  --color-secondary-main: #f5f4fa;
-  --color-footer-mailtel: rgba(255, 255, 255, 0.6);
+  --color-logo-text: #000000;
+  --color-primery-text: #757575;
+  --color-text-logonav: #2196F3;
+  --color-secondery-text: #212121;
+  --color-bgn-hero: #2F303A;
+  --color-hero-title: #FFFFFF;
+  --color-footer-text: rgba(255, 255, 255, 0.6);
+}
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 .list {
   list-style: none;
-  /* Комплексный для всех ссылок */
 }
 
-body {
-  background-color: var(--color-header-footer);
-  color: var(--primary-text-color);
-
-  font-family: Roboto, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-}
-
-/* Header - NAV */
-
-.nav-logo {
-  color: var(--color-header-logo);
-
+.link {
   text-decoration: none;
-  font-family: Raleway, sans-serif;
+}
+
+.link:hover, 
+.link:focus {
+  color: var(--color-text-logonav);
+}
+
+.linksecondery {
+  text-decoration: none;
+}
+
+.logo {
+  color: var(--color-text-logonav);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* Header */
+.header-logo {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-logo-text);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
-.logo-web {
-  color: var(--nav-navigatin);
-}
-
-.head-line .line-link,
-.list-line .contact-link {
-  color: var(--title-text-color);
-
-  text-decoration: none;
+.header-link {
+  color: var(--color-secondery-text);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
 
-.head-line .line-link:hover,
-.head-line .line-link:focus,
-.list-line .contact-link:hover,
-.list-line .contact-link:focus {
-  color: var(--nav-navigatin);
+.header-link-contact {
+  color: var(--color-primery-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
 }
 
-.line-link.current {
-  color: var(--nav-navigatin);
-}
+/* Main index.html */
 
-.list-line .contact-link {
-  color: var(--primary-text-color);
-}
-
-/* Index.html main */
+/* Hero */
 
 .hero {
-  background-color: var(--color-bg-hero-footer);
-}
-
-.hero {
-  text-align: center;
+  background-color: var(--color-bgn-hero);
 }
 
 .hero-title {
-  color: var(--color-header-footer);
-
+  color: var(--color-hero-title);
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
-.function {
-}
-
-.function-store {
-}
-
-.hero-button {
-  color: var(--color-header-footer);
-  background-color: var(--nav-navigatin);
-
+.hero-btn {
+  color: var(--color-hero-title);
+  background-color: var(--color-text-logonav);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -115,109 +102,79 @@ body {
   cursor: pointer;
 }
 
-.store-title {
-  color: var(--title-text-color);
+/* Function */
 
+.function-item-title {
+  color: var(--color-secondery-text);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  width: 270px;
 }
 
-.store-text {
-  width: 270px;
-  height: 72px;
+.function-text {
+  color: var(--color-primery-text);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
-.ocupation {
-}
+/* Occupation, Team */
 
-.ocupation-title,
-.team-title {
-  color: var(--title-text-color);
-
+.main-title {
+  color: var(--color-secondery-text);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
-  text-align: center;
+  letter-spacing: 0.03em;
 }
 
-.teamlist-title {
-  color: var(--title-text-color);
-
+.team-item-tetle {
+  color: var(--color-secondery-text);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
-.teamlist-text {
+.team-item-text {
+  color: var(--color-primery-text);
   font-size: 16px;
-  line-height: 19px;
-}
-
-/* Portfolio.html main */
-
-.button-link {
-  color: var(--title-text-color);
-  background-color: var(--color-secondary-main);
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.button-link:hover,
-.button-link:focus {
-  color: var(--color-header-footer);
-  background-color: var(--nav-navigatin);
-}
-
-.link-pictures {
-  text-decoration: none;
-}
-
-.link-title {
-  color: var(--title-text-color);
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.link-text {
-  color: var(--primary-text-color);
-
-  font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
 /* Footer */
 
 .footer {
-  background-color: var(--color-bg-hero-footer);
+  background-color: var(--color-bgn-hero);
 }
 
 .footer-logo {
-  color: var(--color-header-footer);
-
-  font-family: Raleway, sans-serif;
-  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-hero-title);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.footer-address {
+  font-style: normal;
 }
 
 .footer-link {
-  color: var(--color-header-footer);
-
-  text-decoration: none;
+  color: var(--color-hero-title);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  font-style: normal;
 }
 
-.footer-mailtel {
-  color: var(--color-footer-mailtel);
-
-  text-decoration: none;
+.footer-contact {
+  color: var(--color-footer-text);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
