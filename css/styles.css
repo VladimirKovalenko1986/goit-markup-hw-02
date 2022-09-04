@@ -13,7 +13,10 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  color: var(--color-primery-text);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
 .list {
@@ -31,6 +34,10 @@ body {
 
 .linksecondery {
   text-decoration: none;
+}
+
+.current {
+  color: var(--color-text-logonav);
 }
 
 .logo {
@@ -57,13 +64,11 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
 }
 
 .header-link {
   color: var(--color-secondery-text);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
@@ -71,7 +76,6 @@ body {
 .header-link-contact {
   color: var(--color-primery-text);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
@@ -82,6 +86,7 @@ body {
 
 .hero {
   background-color: var(--color-bgn-hero);
+  text-align: center;
 }
 
 .hero-title {
@@ -94,6 +99,7 @@ body {
 }
 
 .hero-btn {
+  font-family: inherit;
   color: var(--color-hero-title);
   background-color: var(--color-text-logonav);
   font-weight: 700;
@@ -110,15 +116,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-.function-text {
-  color: var(--color-primery-text);
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
 }
 
 /* Occupation, Team */
@@ -128,7 +126,11 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.team {
+  background-color: var(--color-bgn-btn);
 }
 
 .team-item-tetle {
@@ -136,14 +138,11 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
 }
 
 .team-item-text {
-  color: var(--color-primery-text);
   font-size: 16px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
 }
 
 /* Main portfolio.html.html */
@@ -151,13 +150,13 @@ body {
 /* Hero */
 
 .function-btn {
+  font-family: inherit;
   color: var(--color-secondery-text);
   background-color: var(--color-bgn-btn);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  letter-spacing: 0.03em;
-  font-family: inherit;
+  letter-spacing: inherit;
 }
 
 .function-btn:hover,
@@ -182,7 +181,6 @@ body {
   color: var(--color-primery-text);
   font-size: 16px;
   line-height: 1.9;
-  letter-spacing: 0.03em;
 }
 
 /* Footer */
@@ -197,7 +195,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
 }
 
 .footer-address {
@@ -206,15 +203,13 @@ body {
 
 .footer-link {
   color: var(--color-hero-title);
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  font-style: normal;
 }
 
 .footer-contact {
   color: var(--color-footer-text);
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+}
+
+.footer-contact:hover, 
+.footer-contact:focus {
+  color: var(--color-hero-title);
 }
