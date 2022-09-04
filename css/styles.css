@@ -4,9 +4,10 @@
   --color-primery-text: #757575;
   --color-text-logonav: #2196F3;
   --color-secondery-text: #212121;
-  --color-bgn-hero: #2F303A;
   --color-hero-title: #FFFFFF;
   --color-footer-text: rgba(255, 255, 255, 0.6);
+  --color-bgn-hero: #2F303A;
+  --color-bgn-btn: #F5F4FA;
 }
 
 
@@ -51,7 +52,7 @@ body {
 
 /* Header */
 .header-logo {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: var(--color-logo-text);
   font-weight: 700;
   font-size: 26px;
@@ -145,6 +146,45 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Main portfolio.html.html */
+
+/* Hero */
+
+.function-btn {
+  color: var(--color-secondery-text);
+  background-color: var(--color-bgn-btn);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  font-family: inherit;
+}
+
+.function-btn:hover,
+.function-btn:focus {
+  color: var(--color-hero-title);
+  background-color: var(--color-text-logonav);
+}
+
+.pictures-link {
+  text-decoration: none;
+}
+
+.pictures-title {
+  color: var(--color-secondery-text);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.pictures-text {
+  color: var(--color-primery-text);
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+
 /* Footer */
 
 .footer {
@@ -152,7 +192,7 @@ body {
 }
 
 .footer-logo {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: var(--color-hero-title);
   font-weight: 700;
   font-size: 26px;
